@@ -95,7 +95,7 @@
                         name="date" placeholder="dd/mm/yyyy">
                     </div>
                     <div class="input-group actions">
-                        <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
+                        <a href="#" onclick="Modal.close(); Form.clearFields()" class="button cancel">Cancelar</a>
                         <button>Salvar</button>
                     </div>
                 </form>
@@ -104,11 +104,12 @@
         </div>
     </div>
 
-
     <footer>#VidaOrganizada $ by Marcelo Gasparetti</footer>
-    
+
     <script src="./src/scripts.js"></script>
 
 </body>
+
+
 
 </html>
