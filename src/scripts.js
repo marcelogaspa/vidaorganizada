@@ -16,36 +16,22 @@ const Modal = {
         .querySelector('.modal-overlay')
         .classList
         .remove('active')
+        
+    }
+}   
 
+const Storage = {
+    get() {
+        return JSON.parse(localStorage.getItem("vidaorganizada:transactions")) || []
+    },
+
+    set(transactions) {
+        localStorage.setItem("vidaorganizada:transactions", JSON.stringify(transactions))
     }
 }
 
 const Transaction = {
-    all: [
-        {
-        description: 'Aluguel',
-        amount: -83600,
-        date: '20/01/2021'
-        },
-        {
-    
-        description: 'Condominio',
-        amount: -36300,
-        date: '05/01/2021'
-        },
-        {
-    
-        description: 'Net',
-        amount: -22600,
-        date: '15/01/2021'
-        },
-        {
-    
-        description: 'Salario',
-        amount: 568000,
-        date: '05/02/2021'
-        },
-    ],
+    all: Storage.get(),
 
     add(transaction) {
         Transaction.all.push(transaction)
@@ -94,12 +80,13 @@ const DOM = {
 
     addTransaction(transaction, index){
         const tr = document.createElement('tr')
-        tr.innerHTML = DOM.innerHTMLTransaction(transaction)
+        tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)
+        tr.dataset.index = index
 
         DOM.transactionContainer.appendChild(tr)
     },
 
-    innerHTMLTransaction(transaction) {
+    innerHTMLTransaction(transaction, index) {
         const CashInOut = transaction.amount > 0 ? "income" : "expense"
         
         const amount = Utils.formatCurrency(transaction.amount)
@@ -109,7 +96,7 @@ const DOM = {
             <td class="${CashInOut}">${amount}</td>
             <td>${transaction.date}</td>
             <th>
-                <img src="./assets/minus.svg" alt="remover transação">
+                <img onclick="Transaction.remove(${index}) "src="./assets/minus.svg" alt="remover transação">
             </th>
             `
 
@@ -218,12 +205,11 @@ const App = {
     
     init() {
 
-        Transaction.all.forEach(transaction => {
-            DOM.addTransaction(transaction)
-        })
+        Transaction.all.forEach(DOM.addTransaction)
         
         DOM.updateTansaction()
 
+        Storage.set(Transaction.all)
     },
 
     reload() {

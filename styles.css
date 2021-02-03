@@ -244,6 +244,8 @@ td.expense {
 }
 #form h2 {
     margin-top: 0;
+    color: var(--light-blue);
+    font-weight: bolder;
 }
 #form form input {
     border: none;
