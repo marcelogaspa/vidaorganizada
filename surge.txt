@@ -1,0 +1,12 @@
+$ surge ./ vidaorganizada.com.br
+
+           Running as mgasparetti86@gmail.com (Student)
+
+        project: ./
+         domain: vidaorganizada.com.br
+
+
+             IP: 138.197.235.123
+
+   Success! - Published to vidaorganizada.com.br
+

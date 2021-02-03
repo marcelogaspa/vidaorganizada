@@ -6,7 +6,7 @@
 ## 📝 Sobre
 
 <p>
-Este Repo criado para o curso <b>Maratina Discover</b> da <b>Rocketseat</b>.
+Este Repo foi criado para o curso <b>Maratina Discover</b> da <b>Rocketseat</b>.
 Durante as aulas aprendemos a construção de uma App Web. Durante as semanas temos alguns desafios para melhorar o designe e as funcionalidades. 
 </p>
 
