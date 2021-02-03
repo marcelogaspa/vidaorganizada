@@ -1,22 +1,6 @@
 const Modal = {
-    //ToDo:
-    // add toogle function...
-    open() {
-        //abrir modal
-        //adicionar a classe active do modal
-        document
-        .querySelector('.modal-overlay')
-        .classList
-        .add('active')
-    },
-    close() {
-        //Fechar o modal
-        //remover a classe active do modal
-        document
-        .querySelector('.modal-overlay')
-        .classList
-        .remove('active')
-        
+    toggle() {
+        document.querySelector('.modal-overlay').classList.toggle('active')
     }
 }   
 
@@ -194,7 +178,7 @@ const Form = {
             const transaction = Form.formatValues()
             Transaction.add(transaction)
             Form.clearFields()
-            Modal.close()
+            Modal.toggle()
         } catch(error) {
             alert(error.message)
         }
