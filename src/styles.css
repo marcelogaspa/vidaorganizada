@@ -152,7 +152,6 @@ header{
 /* Data Inputs */
 #data-input {
     display: block;
-    width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
     overflow-x: auto;
@@ -172,6 +171,7 @@ table th {
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
+    width: 100%;
 }
 
 table td {
