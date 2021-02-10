@@ -32,6 +32,7 @@ Durante as aulas aprendemos a construção de uma App Web. Durante as semanas te
 ## Proximas features
 - back-end com Express, Cors, Axios e o nodemon para o desenvolvimento.
 - Gráficos contendo os projeção dos Gastos e Ganhos utilizando a API [Chart.js](https://www.chartjs.org/) 
-<span><img src="./images/chartjs-logo.svg" width=80px eight=80px> </span>
+<br/>
+<img src="./images/chartjs-logo.svg" width=80px eight=80px>
 
 
