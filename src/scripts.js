@@ -40,6 +40,7 @@ const Transaction = {
         }))
 
         return income 
+        
     },
 
     expense() {
@@ -194,6 +195,7 @@ const App = {
         DOM.updateTansaction()
 
         Storage.set(Transaction.all)
+
     },
 
     reload() {

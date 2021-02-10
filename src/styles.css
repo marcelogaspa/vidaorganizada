@@ -119,7 +119,7 @@ header{
     color: white;
 }
 
-/* Card */
+/* <<>><<>><<>> Card <<>><<>><<>> */
 .card {
     background-color: #e7e9ee;
     padding: 1.5rem 2rem;
@@ -149,7 +149,7 @@ header{
     color: white;
 }
 
-/* Data Inputs */
+/* <<>><<>><<>> Data Inputs <<>><<>><<>> */
 #data-input {
     display: block;
     border-spacing: 0 0.5rem;
@@ -171,7 +171,7 @@ table th {
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
-    width: 100%;
+    width: 100%;    
 }
 
 table td {
@@ -210,7 +210,25 @@ td.expense {
     color: var(--red);
 }
 
-/* Modal */
+/* <<>><<>><<>> Graphic <<>><<>><<>> */
+
+.chart-info {
+    color: var(--light-blue);
+    font-size: medium;
+    margin-top: 2rem;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    background-color: #e7e9ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 0 0 0.25rem;
+}
+
+/* <<>><<>><<>> Modal <<>><<>><<>> */
 .modal-overlay {
     width: 100%;
     height: 100%;
@@ -238,7 +256,7 @@ td.expense {
     z-index: 1;
 }
 
-/* From */
+/* <<>><<>><<>> Form <<>><<>><<>> */
 #form {
     max-width: 500px;
 
@@ -273,7 +291,7 @@ td.expense {
     margin-top:  0.8rem;
 }
 
-/* Footer */
+/* <<>><<>><<>> Footer <<>><<>><<>> */
 footer {
     text-align: center;
     padding: 4rem 0 2rem;
@@ -281,7 +299,7 @@ footer {
     opacity: 0.6;
 }
 
-/* Responsive */
+/* <<>><<>><<>> Responsive <<>><<>><<>> */
 @media (min-width: 800px) {
     html {
         font-size: 87.5%;
