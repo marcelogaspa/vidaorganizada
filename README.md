@@ -35,4 +35,17 @@ Durante as aulas aprendemos a construção de uma App Web. Durante as semanas te
 <p>
 <img src="./images/chartjs-logo.svg" width=80px eight=80px>
 </p>
+- Modelo de representação dos graficos onde em Vermelho temos os Gastos (saída de valores) e em Azul claro os Ganho (Entrada de valores). Também será possivel visualizar cada seguimento de dados individualmente clicando sobre as labels Gastos e Ganhos 
+<img src="./images/labels.PNG" width="120px">
+<span>
+    <p>
+        <img src="./images/graficos.PNG">
+    </p>
+<span>
 
+<video controls="">
+    <source src="./images/graphic-usage.mp4" type="video/mp4" width="120px">
+<p>
+Este Browser não suporte video
+</p>
+</video>

@@ -195,7 +195,6 @@ const App = {
         DOM.updateTansaction()
 
         Storage.set(Transaction.all)
-
     },
 
     reload() {
@@ -205,3 +204,5 @@ const App = {
 }
 
 App.init()
+
+console.log(Chart.expense)
