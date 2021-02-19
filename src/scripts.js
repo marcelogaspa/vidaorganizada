@@ -204,5 +204,3 @@ const App = {
 }
 
 App.init()
-
-console.log(Chart.expense)
