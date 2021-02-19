@@ -96,6 +96,30 @@ button:hover{
     opacity: 1;
 }
 
+.btn-select-transact {
+        margin-bottom: 0 15px;
+        text-transform: none;
+        min-width: 100px;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        background-color: transparent;
+        color: var(--light-blue);
+
+        align-content: space-between;
+}
+
+.btn-select-transact.active {
+    background-color: var(--light-blue);
+    color: aliceblue;
+}
+
+.btn-select-transact.active:hover {
+    opacity: 0.6;
+    text-transform: none;
+}
+
 
 /* <<>><<>><<>> Header <<>><<>><<>> */
 
@@ -310,3 +334,5 @@ footer {
     }
 
 }
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css")

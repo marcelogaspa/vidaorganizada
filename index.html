@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    
 </head>
 
 <body>
@@ -52,6 +53,12 @@
             <h2 class="sr-only">Transações</h2>
 
             <a href="#" class="button new" onclick="Modal.toggle()">+ Nova Transação</a>
+            
+            <div class="col-md-12" id="filter-btn-bo">
+                <button class="btn-select-transact active" id="allTransactions" onclick="">Todas</button>
+                <button class="btn-select-transact" id="creditado" onclick="">Entradas</button>
+                <button class="btn-select-transact" id="debitado" onclick="">Saídas</button>
+            </div>
 
             <table id="data-input">
                 <thead>
@@ -115,8 +122,6 @@
     <script src="./src/scripts.js"></script>
     
     <script src="./pages/chart.js"></script>
-
-    <script src="./pages/transactionsbymonth.js"></script>
 
 </body>
 
