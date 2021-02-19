@@ -29,7 +29,7 @@ Durante as aulas aprendemos a construção de uma App Web. Durante as semanas te
 - Se quiser pode remover algum lançamento que fez clicando no botão <span><img src="./assets/minus.svg"></span>
 
 
-## Proximas Desenvolvimentos
+## Proximos Desenvolvimentos
 - back-end com Express, Cors, Axios e o nodemon para o desenvolvimento.
 - Gráficos contendo os projeção dos Gastos e Ganhos utilizando a API [Chart.js](https://www.chartjs.org/) 
 <p>
